@@ -3,7 +3,7 @@ A simple, amazingly fast static web server written in C. Supports faster MIME ty
 
 ## What makes it faster ?
 Firstly, it is written in C , since C is compiled with most intelligent GCC compiler, it is optimized and runs directly on the machine,
-secondly, it uses a in-memory cache built using a Binary search tree. <strong>SDM</strong> is used a hashing function , this hash key is used
+secondly, it uses a in-memory cache built using a Binary search tree. <strong>SDBM</strong> - a hash function used in berkely db , used a hashing function , this hash key is used
 to lookup binary search tree that contains pointers to file data in memory. I/O operations are directly done on cache, in case of a cache miss
 a disk I/O is scheduled and data is bought into the cache and then serve, this miss however can occur only once when the file gets requested for the first time.
 Thirdly, MIME type resolution, I identified MIME type conversion has to happen every time , so instead of implementing it as O(n) I tought of creating a 
