@@ -13,7 +13,7 @@ file type. In future, to make it more efficient, we consider caching preprocesse
 ## Performance comparision : 
 ![Performance comparision : IronServer (Blue) vs npm serve (Orange)](https://raw.githubusercontent.com/Narasimha1997/IronServer/master/profile/Figure_1.png)
 
-<strong> In Blue : IronServer , In Orange : npm serve
+<strong> In Blue : IronServer , In Orange : npm serve  --- y axis : time in seconds, x axis : number of requests
 
 ## Call Graph : 
 Profiling is done using gprof , a profiling tool for GCC compiler. The call-graph obtained for 100 requests can be used to unlock performance insights
